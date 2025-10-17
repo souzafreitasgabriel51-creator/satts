@@ -1,0 +1,559 @@
+:root{
+    --bg-dark:#040421;/*fundo principal*/
+    --bg-card:#02021a;/*estiliza os <h1> */
+    --color-gold:#ffc93c;/*letra bitcoin*/
+    --color-light:#f4f4f4;/*estiliza h3*/
+    --color-text:#f4f6ff;
+}
+ *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:' poppins',sans-serif;
+ }
+.imagem{
+     position: relative;
+      right:-80%;
+      margin-top:0;
+       width: 10px;
+       max-height:200px;
+}
+  
+ .nav-links{ /*estiliza o menu*/
+  background:transparent;
+  border-radius: 1.5rem;
+  text-align: center;
+  border:2px solid rgba(255,255,255,0.05); 
+  }
+.login-btn:hover {
+    background-color:var(--color-gold);
+} 
+body{/*corpo do site*/
+  background:url(imagens.png/fundo.png) ;
+ margin: 0;
+
+}
+
+.logo{ /* estiliza a logo Sats lottu*/
+  color: #d0d5dd;
+}
+ h1{ /*estiliza o h1*/
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+  h2{/*estiliza o h2 */
+    font-weight: 600;
+    font-size: 2rem;
+    color:var(--color-text);
+    margin: 240px 0 20px;
+    text-align:center;
+    padding-bottom: 20px;
+
+  
+  }
+  h3{ /* concurso,premiacao,proximo sorteio*/
+    color: aqua;
+  }
+  h4{
+    text-align:center ;
+    color: var(--color-text);
+  }
+  
+   h5{
+    color:var(--color-text);
+   }
+
+  p{ /*estiliza o p */
+     color: var(--color-text);
+     text-align:center;
+
+   }
+   a{
+    color: rgb(11, 2, 49);
+   }
+  
+
+/*estilizar cabeçalho*/
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 2%;
+  border-bottom: 1px solid rgb(177, 176, 170)
+}
+.nav-links a { /*estiliza o botao de entrar/login*/
+  color: var(--color-text);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+.login-btn{ 
+  padding: 8px 20px;
+  background:var(--color-gold) ;
+  color:var(--bg-card);
+  border:2px solid var(--color-gold);
+  border-radius: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+  /*botao dourado  principal*/
+.cta-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background:transparent;
+    font-weight: 800;
+    border-radius: 1.5rem;
+    transition: tranform 0.3s ease;
+    border:1px solid rgba(255,255,255,0.05);; 
+}
+ 
+.cta-button:hover{ /*estiliza a luz atras dos botoes menu*/
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(126, 118, 97, 0.6);
+}
+.section-container{ /*estiliza o container do check-in*/
+    padding: 0,5;
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;    
+}     
+/*botao dourado menor(check-in)*/
+.cta-button-small{
+    display: inline-block;
+    padding:10px 25px;
+    background-color: var(--color-gold);
+    color:#030a3f;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 1.5rem;
+    margin-top: 15px;
+
+}
+/* estiliza o 1.000.000 banner de premios*/
+.top-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  padding: 10px 10px;
+  font-size: o.9rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(5, 92, 88);
+  color:goldenrod;
+} 
+.separator{
+   color:goldenrod;
+   margin: 0 20px;
+}
+/*estiliza o section*/
+  .hero-section{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding: 180px 5%;
+
+  }
+  .hero-section p { /*estiliza os p*/
+    max-width: 600px;
+    margin:0 auto 30px;
+  }
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+  }
+  .hero-text{
+    flex-basis: 60%;
+    text-align:center;
+    color: antiquewhite;
+  }
+  /*cards de informação estiliza*/
+  .info-cards{
+   grid-template-columns :repeat(3, 1fr);
+    gap:30px;
+    max-width: 1000px;
+    margin: 3px auto;
+    text-align: center;
+     display: grid;
+    
+    
+  }
+
+  /*estiliza os cards maior maq/calen/moeda */
+  .card{
+    position: relative;
+    padding:10px;
+    background-color:transparent;
+    border-radius: 12px;
+    border: 1px solid rgba(253, 145, 4, 0.993);
+    text-align:center;
+    
+  }
+  .card2{/*card onde as imagens ficam dentro*/
+    width:40px ;
+    padding:10px 10px;
+    background-color:transparent;
+    border-radius:5px;
+    border: 1px solid rgba(253, 145, 4, 0.993);
+    position: absolute;
+    top: 0.1;
+    left:1;
+  }
+    .info-cards2{ /*organiza os numeros e texto do card mega sats*/
+    grid-template-columns :repeat(4, 1fr);
+    gap:30px;
+    max-width: 1000px;
+    margin: 3px auto;
+    text-align: center;
+    display: grid;
+    position: relative;
+
+    }
+    
+  .info-cards3{ /*organiza os numeros e texto do card mega da virada*/
+    grid-template-columns :repeat(4, 1fr);
+    gap:30px;
+    max-width: 1000px;
+    margin: 3px auto;
+    text-align: center;
+     display: grid;
+     position: relative;
+
+  }
+  
+  .card-image{ /*organiza as imagem dentro do card*/
+    width:100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-fit: contain;
+
+  }
+
+  /*estiliza o conteiner de sorteio e mega da virada*/
+  .prize-section{
+     position: relative;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color:transparent;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgb(230, 82, 14);
+    box-shadow: 0 0 20px solid rgb(237, 237, 240);
+    
+  }
+  .button-aposta{ /* estiliza todos os botoes de aposte agora */
+  background:rgb(248, 185, 11);
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-weight:600;
+   padding: 10px 15px;
+  position: absolute;
+  margin-top: 50px;
+  top:-90px;
+  transform: translate(-50%, 50%);
+  z-index: 10;
+                 
+ 
+}
+.button-aposta1{ /* estiliza o 1 botão de aposte agora */
+  background:rgb(248, 185, 11);
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-weight:600;
+   padding: 10px 15px;
+  
+}
+  
+  
+.prize-info{ /*organiza tudo dentro do conteiner*/
+  margin-bottom: 25px;
+  text-align: center;
+
+}
+
+.prize-info span{ /*deixa o numero dourado*/
+  display: block;
+  margin-top: 5px;
+  color: var(--color-gold);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+  
+.prize-subtitle{/*deixa o texto na cor */
+  margin-top: 5px;
+  color: var(--color-light);
+  font-size: 1.5rem;
+
+}
+
+.distribution{
+  display: flex;
+
+  justify-content: space-around;
+  margin: 30px 0 ;
+  border-top: 1px solid rgb(253, 75, 5);
+  padding-top: 20px;
+}
+ .percent-item{ /*organiza as informações */
+   
+    max-width: 1000px;
+    margin: 3px auto;
+    text-align: center;
+    display: inline;
+    
+} 
+.card0{/*card onde as imagens ficam dentro*/ 
+    width:50px;
+    height:50px;
+    background-color:transparent;
+    border-radius:5px;
+    border: 1px solid rgba(253, 145, 4, 0.993);
+    align-items: center;
+   
+  }
+
+  
+ strong{
+  width:auto;
+    height: auto;
+    display: block;
+    align-items: center;
+    margin-top: -29px;
+  
+   
+}
+   
+.button{/* estiliza os resultados*/
+  background: transparent;
+  border:1px solid rgba(255,255,255,0.05);
+  border-radius: 1.5rem;
+  padding: 1px;
+}
+.results-link{ 
+  display: block;
+  margin-top: 20px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.7;
+  text-align:center;
+}
+
+
+/*estiliza o card bot de check-in*/
+.bot-card{
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.05);
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+ /*estiliza o h3 dentro do card check-in*/
+ .bot-card h3{
+  margin: 10px 0;
+  color: var(--color-light);
+ }
+
+ /*estiliza o o icone de check-in*/
+ .bot-icon{
+  width: 40px;
+  background: var(--color-gold);
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  box-shadow:0 0 10px rgba(255, 201, 60, 0.3);
+ }
+
+ .accordion{
+  margin:20px 300px;
+  padding: 10px;
+ }
+
+ /* Estilo básico para o cabeçalho (pergunta) */
+.accordion-header {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent; /* Cor de fundo escura */
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 5px;/* Espaço entre os itens */
+  border: 1px solid rgba(126, 118, 97, 0.6);
+  border-radius: 1.5rem;
+}
+
+/* Ocultar a resposta por padrão */
+.accordion-content {
+  max-height: 0; /* O essencial para esconder */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Para a animação suave */
+  background-color: #2a2a2a;
+  color: #ccc;
+  padding: 0 15px; /* Padding vertical inicial zero */
+}
+
+/* Estilo para o parágrafo dentro da resposta */
+.accordion-content p {
+  padding: 15px 0;
+  margin: 0;
+}
+
+/* Rotação da seta */
+.icon {
+  transition: transform 0.3s;
+}
+
+/* Classe CSS que será adicionada/removida pelo JavaScript */
+.accordion-item.active .accordion-content {
+  max-height: 500px; /* Um valor alto o suficiente para caber o conteúdo */
+  padding: 15px; /* Padding final quando expandido */
+}
+
+.accordion-item.active .icon {
+  transform: rotate(180deg); /* Gira a seta quando ativo */
+}
+
+/* Ocultar a resposta por padrão */
+.accordion-content {
+  max-height: 0; /* O essencial para esconder */
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Para a animação suave */
+  background-color: #525252;
+  color: #ccc;
+  padding: 0 15px; /* Padding vertical inicial zero */
+}
+
+/* Estilo para o parágrafo dentro da resposta */
+.accordion-content p {
+  padding: 15px 0;
+  margin: 0;
+}
+
+/* Rotação da seta */
+.icon {
+  transition: transform 0.3s;
+}
+
+/* Classe CSS que será adicionada/removida pelo JavaScript */
+.accordion-item.active .accordion-content {
+  max-height: 500px; /* Um valor alto o suficiente para caber o conteúdo */
+  padding: 15px; /* Padding final quando expandido */
+}
+
+.accordion-item.active .icon {
+  transform: rotate(180deg); /* Gira a seta quando ativo */
+}
+
+
+/*RODAPÉ DOURADO ( FOOTER CTA)*/
+.footer-cta{
+  background-color: rgb(250, 250, 5);
+  color: var(--bg-dark);
+  padding: 70px 5% 10px;
+  text-align: center;
+  position: relative;
+  margin-top: 50px;
+  border-radius:1.5rem;
+}
+  
+.footer-cta h1{
+  font-size: 2.5rem;
+  color: var(--bg-card);
+  max-width: 600px;
+  margin: 15px auto 30px;
+
+}
+ 
+.footer-cta.cta-button{
+  background-color: var(--bg-dark);
+  color: var(--color-light);
+  box-shadow: none;
+  border: 2px solid var(--bg-dark);
+
+}
+
+.footer-cta.cta-button:hover{
+  transform: translateY(-2px);
+  background: var(--bg-dark);
+  color: var(--color-light);
+
+}
+.imagens{
+ position: absolute;
+  top: 99px;
+  right: 1%; 
+  font-size: 3rem; 
+  transform: rotate(-15deg);
+  height: 0px;
+  width: auto;
+  
+}
+ 
+
+.logo-footer{
+  font-weight: 800;
+  margin-bottom: 5px;
+
+}
+ 
+.social-links{
+  margin: 30px 0 20px;
+
+}
+.social-links a {
+   display: inline-block;
+  width: 3%;
+  height:10%;
+  object-fit: contain;
+  background-color: var(--bg-dark);
+  color: var(--color-gold);
+  border-radius: 50%;
+  text-decoration: none;
+  line-height: 35px;
+  margin: 0 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+}
+.policy-links,.copyright{
+  color:rgba(0,0,0,0.7);
+  font-size: 0.8rem;
+  margin-top: 5px;
+
+}
+
+/*responsividade*/
+@media(max-width:768px){
+  h1{font-size: 2rem;}
+  h2{font-size: 1.6rem;}
+  .hero-content{flex-direction: column;}
+  .hero-text{text-align: center;}
+  .info-cards{grid-template-columns: 1fr;}
+  .distribution{flex-wrap: wrap;}
+  .pertence-item{flex-basis: 40%;
+    margin: bottum 20px;}
+  .footer-cta h1 { font-size: 2rem;}
+  .lightning-icon{left: 20px;}
+  }
+
