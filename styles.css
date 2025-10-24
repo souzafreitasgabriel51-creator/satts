@@ -1,5 +1,5 @@
 :root{
-    --bg-dark:#040421;/*fundo principal*/
+    --bg-dark:#3c3cbe;/*fundo principal*/
     --bg-card:#02021a;/*estiliza os <h1> */
     --color-gold:#ffc93c;/*letra bitcoin*/
     --color-light:#f4f4f4;/*estiliza h3*/
@@ -12,11 +12,14 @@
       font-family:' poppins',sans-serif;
  }
 .imagem{
-     position: relative;
-      right:-80%;
-      margin-top:0;
-       width: 10px;
-       max-height:200px;
+   display: flex;
+    width: 256.14852345580437px;
+    height: 256.14852345580437px;
+    position: absolute;
+    right:-1px;
+    top:329.66px ;
+   margin-right: 120px;
+   
 }
   
  .nav-links{ /*estiliza o menu*/
@@ -29,54 +32,83 @@
     background-color:var(--color-gold);
 } 
 body{/*corpo do site*/
-  background:url(imagens.png/fundo.png) ;
- margin: 0;
-
+  background-color: rgba(4, 4, 33, 1);
+ 
 }
 
 .logo{ /* estiliza a logo Sats lottu*/
   color: #d0d5dd;
 }
+span{
+   background-image: linear-gradient(to right, #fffb06, #ffa600dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
  h1{ /*estiliza o h1*/
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
-
+    color: rgba(203, 213, 225, 1);
 }
   h2{/*estiliza o h2 */
-    font-weight: 600;
-    font-size: 2rem;
-    color:var(--color-text);
-    margin: 240px 0 20px;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color:rgba(203, 213, 225, 1);
     text-align:center;
-    padding-bottom: 20px;
-
-  
+     margin-top: 300px;
+     margin-bottom: 10px;
+     white-space: nowrap;
   }
   h3{ /* concurso,premiacao,proximo sorteio*/
-    color: aqua;
+    color:rgba(203, 213, 225, 1);
+    font-weight: 500;
+    font-size:20px;
+    padding-left: 20%;
+    text-align:start;
+    
   }
   h4{
-    text-align:center ;
-    color: var(--color-text);
+     font-weight: 800;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom:30px;
+    text-align: center;
+    color: rgba(203, 213, 225, 1);
+    white-space: nowrap;
+
   }
   
    h5{
-    color:var(--color-text);
+    color:rgba(255, 194, 0, 1);
+    text-align: center;
+    font-size: 30px;
+    padding-top: 70px;
    }
+h6{
+   color:rgba(203, 213, 225, 1);
+    font-weight: 500;
+    font-size:15px;
+    padding-left: 20%;
+    text-align: start;
+}
+
+
 
   p{ /*estiliza o p */
-     color: var(--color-text);
-     text-align:center;
-
+     color:rgba(203, 213, 225, 1);
+    font-weight: 500;
+    font-size:15px;
+    padding-left:0%;
+    text-align:start;
    }
    a{
     color: rgb(11, 2, 49);
    }
-  
-
+   
 /*estilizar cabeçalho*/
 .header{
   display: flex;
@@ -118,7 +150,7 @@ body{/*corpo do site*/
     box-shadow: 0 6px 20px rgba(126, 118, 97, 0.6);
 }
 .section-container{ /*estiliza o container do check-in*/
-    padding: 0,5;
+    padding: 0.5;
     max-width: 900px;
     margin: 50px auto;
     text-align: center;    
@@ -153,11 +185,14 @@ body{/*corpo do site*/
 }
 /*estiliza o section*/
   .hero-section{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     overflow: hidden;
-    padding: 180px 5%;
-
+    padding: 120px 5%;
+    gap: 30px;
+   background-image: url(imagens.png/fundohtml200.png);
   }
   .hero-section p { /*estiliza os p*/
     max-width: 600px;
@@ -181,55 +216,36 @@ body{/*corpo do site*/
    grid-template-columns :repeat(3, 1fr);
     gap:30px;
     max-width: 1000px;
-    margin: 3px auto;
+     margin: 3px auto;
     text-align: center;
      display: grid;
-    
-    
+     margin-bottom: 10px;
   }
 
   /*estiliza os cards maior maq/calen/moeda */
   .card{
     position: relative;
-    padding:10px;
-    background-color:transparent;
+    padding:25px;
+    background-color:rgba(14, 14, 37, 0.65);
     border-radius: 12px;
-    border: 1px solid rgba(253, 145, 4, 0.993);
+    border: 0.5px solid rgba(39, 39, 55, 1);
     text-align:center;
-    
+    margin-top:-100px;
+    width: 331px;
+    height: 160px;
+    opacity: 1;
   }
   .card2{/*card onde as imagens ficam dentro*/
     width:40px ;
     padding:10px 10px;
     background-color:transparent;
-    border-radius:5px;
-    border: 1px solid rgba(253, 145, 4, 0.993);
+    border-radius:0.5rem;
+    border: 1px solid rgb(255, 174, 0);
     position: absolute;
     top: 0.1;
     left:1;
+    margin-left: 0;
   }
-    .info-cards2{ /*organiza os numeros e texto do card mega sats*/
-    grid-template-columns :repeat(4, 1fr);
-    gap:30px;
-    max-width: 1000px;
-    margin: 3px auto;
-    text-align: center;
-    display: grid;
-    position: relative;
-
-    }
-    
-  .info-cards3{ /*organiza os numeros e texto do card mega da virada*/
-    grid-template-columns :repeat(4, 1fr);
-    gap:30px;
-    max-width: 1000px;
-    margin: 3px auto;
-    text-align: center;
-     display: grid;
-     position: relative;
-
-  }
-  
   .card-image{ /*organiza as imagem dentro do card*/
     width:100%;
     height: auto;
@@ -237,20 +253,6 @@ body{/*corpo do site*/
     object-fit: cover;
     object-fit: contain;
 
-  }
-
-  /*estiliza o conteiner de sorteio e mega da virada*/
-  .prize-section{
-     position: relative;
-    max-width: 800px;
-    margin: 80px auto;
-    padding: 40px;
-    background-color:transparent;
-    border-radius: 16px;
-    text-align: center;
-    border: 1px solid rgb(230, 82, 14);
-    box-shadow: 0 0 20px solid rgb(237, 237, 240);
-    
   }
   .button-aposta{ /* estiliza todos os botoes de aposte agora */
   background:rgb(248, 185, 11);
@@ -262,95 +264,117 @@ body{/*corpo do site*/
   position: absolute;
   margin-top: 50px;
   top:-90px;
-  transform: translate(-50%, 50%);
+  transform: translate(-20%, 50%);
   z-index: 10;
                  
- 
 }
 .button-aposta1{ /* estiliza o 1 botão de aposte agora */
-  background:rgb(248, 185, 11);
+  background:rgba(255, 194, 0, 1);
   border:1px solid rgba(255,255,255,0.05);
   border-radius: 1.5rem;
   text-decoration: none;
   font-weight:600;
-   padding: 10px 15px;
-  
-}
-  
-  
-.prize-info{ /*organiza tudo dentro do conteiner*/
-  margin-bottom: 25px;
-  text-align: center;
-
-}
-
-.prize-info span{ /*deixa o numero dourado*/
-  display: block;
-  margin-top: 5px;
-  color: var(--color-gold);
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-  
-.prize-subtitle{/*deixa o texto na cor */
-  margin-top: 5px;
-  color: var(--color-light);
-  font-size: 1.5rem;
-
-}
-
-.distribution{
-  display: flex;
-
-  justify-content: space-around;
-  margin: 30px 0 ;
-  border-top: 1px solid rgb(253, 75, 5);
-  padding-top: 20px;
-}
- .percent-item{ /*organiza as informações */
-    max-width: 1000px;
-    margin: 3px auto;
-    text-align: center;
-    display: inline;
-    
+  padding: 10px 15px;
+ 
 } 
-.card0{/*card onde as imagens ficam dentro*/ 
-    width:50px;
-    height:50px;
-    background-color:transparent;
-    border-radius:5px;
-    border: 1px solid rgba(253, 145, 4, 0.993);
-    align-items: center;
+.prize-info{
+   max-width: 1000px;
+   margin: 0 auto;
+   
+} 
+.prize-info h3{
+  padding-left: 35%; 
+}
+.prize-info h2{
+  color: rgba(255, 194, 0, 1);
+ margin-top: 100px;
+}
+.prize-info h4{
+  font-size: medium;
+  color:#ffc93c;
+  padding-top: 10px;
+}
+.prize-info h5{
+  color: rgba(248, 250, 252, 1);
+  font-size: 15px;
+  padding-top:10px;
+}
+  /*estiliza o conteiner de sorteio e mega da virada*/
+  .prize-section{
+     display: flex;
+    /* Distribui o espaço uniformemente entre os cards e nas bordas */
+    justify-content: space-evenly; 
+    align-items:start; /* Alinha os itens pelo topo (caso as descrições tenham tamanhos diferentes) */
+    margin-bottom: 50px;
+    align-items:center;
+    position: relative;
+    max-width:90%;
+    margin: 80px auto;
+    padding: 80px;
+    background-color:rgba(28, 29, 44, 0.65);
+    border-radius: 1.5rem;
+    text-align: center;
+    border: 0 solid rgb(255, 255, 255);
+    box-shadow: 0 0 20px solid rgb(237, 237, 240);
+    
+  }
+  .prize-section h2{
+     font-size:1.5rem;
+    position:absolute;
+    top:-260px;
    
   }
-
-  
+  .prize-section p{
+    font-size:18px;
+    margin-left: 10px;
+  }
  strong{
-  width:auto;
-    height: auto;
-    display: block;
-    align-items: center;
-    margin-top: -29px;
-  
+    display: inline-block;
+    width: 60px;
+    height:50px;
+    line-height: 50px;
+    border-radius:0.5rem; /* Faz o elemento ser circular */
+    border: 1px solid rgba(255, 223, 121, 1); /* Borda laranja */
+    color:rgba(255, 194, 0, 1);
+    font-size: 1.2em;
+    
    
 }
-   
-.button{/* estiliza os resultados*/
-  background: transparent;
-  border:1px solid rgba(255,255,255,0.05);
-  border-radius: 1.5rem;
-  padding: 1px;
+.container-premios {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items:start;
+    margin-bottom: 50px;
+    background-color:rgba(28, 21, 41, 1)
 }
+.card-premio {
+    /* Define uma largura máxima para o card */
+    max-width: 20px; 
+    padding:10px;
+    text-align: center;
+}
+ .button{
+    padding:0 25px;
+    background-color:rgba(42, 36, 53, 1);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius:20px;
+    position: absolute;
+    bottom: 20px;
+    margin-bottom:0;
+    padding-bottom: 15px;
+ }  
+
+
 .results-link{ 
-  display: block;
+  display:flex;
   margin-top: 20px;
-  color: var(--color-text);
   text-decoration: none;
   font-weight: 600;
   opacity: 0.7;
   text-align:center;
+  color: #ccc;
+  align-items: center;
 }
 
 
